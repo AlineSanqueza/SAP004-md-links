@@ -1,4 +1,33 @@
 {
   "name": "md-links",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "description": "## Índice",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --covarege --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlineSanqueza/SAP004-md-links.git"
+  },
+  "keywords": [
+    "mdlinks",
+    "node",
+    "laboratória"
+  ],
+  "author": "Aline Santos Marques de Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlineSanqueza/SAP004-md-links/issues"
+  },
+  "homepage": "https://github.com/AlineSanqueza/SAP004-md-links#readme",
+  "devDependencies": {
+    "jest": "^26.1.0"
+  },
+  "dependencies": {
+    "eslint": "^7.3.1"
+  }
 }
