@@ -1,13 +1,13 @@
 {
   "name": "md-links",
   "version": "0.1.0",
-  "description": "## Índice",
+  "description": "Biblioteca responsável por ler links de documentos em markdown",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "jest --covarege --verbose"
+    "test": "jest --coverage --verbose"
   },
   "repository": {
     "type": "git",
@@ -24,10 +24,17 @@
     "url": "https://github.com/AlineSanqueza/SAP004-md-links/issues"
   },
   "homepage": "https://github.com/AlineSanqueza/SAP004-md-links#readme",
+  "bin": {
+    "md-links": "cli.js"
+  },
   "devDependencies": {
     "jest": "^26.1.0"
   },
   "dependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-jest": "^26.1.0",
+    "chalk": "^4.1.0",
     "eslint": "^7.3.1"
   }
 }
