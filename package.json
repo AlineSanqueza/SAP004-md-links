@@ -7,6 +7,7 @@
     "test": "test"
   },
   "scripts": {
+    "eslint": "eslint --ext .js test/",
     "test": "jest --coverage --verbose"
   },
   "repository": {
@@ -31,10 +32,8 @@
     "jest": "^26.1.0"
   },
   "dependencies": {
-    "@babel/core": "^7.10.4",
-    "@babel/preset-env": "^7.10.4",
-    "babel-jest": "^26.1.0",
     "chalk": "^4.1.0",
-    "eslint": "^7.3.1"
+    "eslint": "^7.3.1",
+    "fs": "0.0.1-security"
   }
 }
