@@ -1,26 +1,17 @@
+const readFile = require('./read-file.js');
+const chalk = require ('chalk');
+const emoji = require('node-emoji'); 
 const fs = require('fs');
 
-function mdLinks(file) {
-  const regex = /([^\[]+)\](\([^\)]*)/gm; //lê o [texto] sem colchetes e o link sem ()
+const mdLinks = (file, option) => {
   return new Promise((resolved, rejected) => {
-    fs.readFile(file, 'utf8', (err, data) => {
-      console.log(file);
-      console.log(data); 
-      console.log(err);
-      if(err) {
-        rejected('Erro: Não foi possível encontrar o arquivo');
-      } else {
-        const match = data.match(regex);
-        const map = match.map((item) => {
-          const split = item.split('](');
-          const text = split[0].replace('\n ', '');
-          const href = split[1].replace(/\)/, '');
-          return {text, href, file};
-        })
-        resolved(map);
-        console.log(map) //mostra o texto q antecede o link,o link e o nome do arquivo
-      }
-    })
-  })
-}
+    fs.stat(file, (err, stats) => {
+      if (err) {
+        rejected(`\n${chalk.red('Sorry, file not found')} ${emoji.emojify(':white_frowning_face:')}\n${chalk.red(err)}`);
+      } else if (stats.isFile()) {
+        resolved(readFile(file, option));
+      };
+    });
+  });
+};
 module.exports = mdLinks;

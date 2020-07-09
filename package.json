@@ -32,8 +32,10 @@
     "jest": "^26.1.0"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "chalk": "^4.1.0",
     "eslint": "^7.3.1",
-    "fs": "0.0.1-security"
+    "node-emoji": "^1.10.0",
+    "node-fetch": "^2.6.0"
   }
 }

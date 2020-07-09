@@ -5,12 +5,11 @@ muito popular entre os programadores. É usada em muitas plataformas que
 manipulam texto (GitHub, fórum, blogs e etc), e é muito comum encontrar arquivos
 com este formato em qualquer repositório (começando pelo tradicional
 `README.md`).
-
 Os arquivos `Markdown` normalmente contém _links_ que muitas vezes estão
 quebrados, ou que já não são válidos e isso prejudica muito o valor da
 informação que está ali.
-
+[rede social](https://alinesanqueza.github.io/SAP004-social-network/src/) Link quebrado
 Uma comunidade open source nos propôs criar uma ferramenta, usando
-[Node.js](https://nodejs.org/), que leia e analise arquivos no formato
+[Node.js](https://nodejs.org/), que leia e analise arquivos no formatos
 `Markdown`, para verificar os arquivos que contenham links e mostrar algumas
 estatísticas.
