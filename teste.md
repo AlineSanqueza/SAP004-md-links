@@ -12,4 +12,4 @@ Uma comunidade open source nos propôs criar uma ferramenta, usando
 [Node.js](https://nodejs.org/), que leia e analise arquivos no formatos
 `Markdown`, para verificar os arquivos que contenham links e mostrar algumas
 estatísticas.
-[Projeto Rede Social](https://alinesanqueza.github.io/SAP004-social-network/src/) Link quebrado
+[Projeto Rede Social](https://aline.github.io/SAP004-social-network/src/) Link quebrado
