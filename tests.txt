@@ -1,6 +1,0 @@
-texto
-[Jest](https://jestjs.io/)
-  para as suas provas unitárias.
-muitos textos
-[Musga](https://www.youtube.com/watch?v=OAGRo4r3Ryg&list=RDOAGRo4r3Ryg&index=1)
-[rede social](https://alinesanqueza.github.io/SAP004-social-network/src/)

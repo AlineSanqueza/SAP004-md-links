@@ -4,7 +4,7 @@ const readFile = (file) => {
   return new Promise((resolved, rejected) => {
     fs.readFile(file, 'utf8', (err, data) => {
       if(err) {
-        rejected(err)//`\n${chalk.red('Sorry, file not found')} ${emoji.emojify(':white_frowning_face:')}\n${chalk.red(err)}`);
+        rejected(err.message);
       } else {
         const regex = data.match(/([^\[]+)\](\([^\)]*)/gm);
         const result = regex.map((item) => {
@@ -14,10 +14,8 @@ const readFile = (file) => {
           return {text, href, file};
         });
         resolved(result);
-        //console.log(result)
-      };
+      }
     });
   });
-};
+}
 module.exports = readFile;
-
