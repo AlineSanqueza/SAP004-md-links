@@ -1,10 +1,11 @@
 # Markdown Links
+Biblioteca para extrair links em arquivos Markdown.
 
 ## Como instalar 
 
 Para executar a biblioteca é necessário ter o Node.js e NPM instalados.
 
-`npm install -g AlineSanqueza/md-links`
+`npm install --global https://github.com/AlineSanqueza/SAP004-md-links.git`
 
 ## Como utilizar
 
